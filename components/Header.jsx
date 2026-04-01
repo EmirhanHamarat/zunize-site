@@ -11,7 +11,15 @@ export default function Header() {
   return (
     <header className="w-full border-b border-[#E6D5B8] backdrop-blur-md bg-[#FAFAF7]/80 sticky top-0 z-50 transition-all duration-300">
 
-      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-center">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-center relative">
+
+        {/* MOBILE BUTTON (SADECE EKLENDİ) */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden absolute left-6 text-xl"
+        >
+          ☰
+        </button>
 
         {/* CENTER - NAV */}
         <nav className="hidden md:flex gap-10 whitespace-nowrap text-[14px] tracking-[0.15em] uppercase text-gray-700">
