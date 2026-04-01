@@ -2,9 +2,13 @@ import { products } from "@/data/products"
 import Link from "next/link"
 import Image from "next/image"
 
-export default async function CollectionPage({ params }) {
+export default async function CollectionPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
 
-  const { slug } = await params
+  const { slug } = params
   const items = products[slug] || []
 
   const titles = {
