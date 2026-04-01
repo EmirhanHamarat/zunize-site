@@ -2,13 +2,9 @@ import { products } from "@/data/products"
 import Link from "next/link"
 import Image from "next/image"
 
-export default async function CollectionPage({
-  params,
-}: {
-  params: { slug: string }
-}) {
+export default async function CollectionPage({ params }: any) { // ✅ sadece burası değişti
 
-  const { slug } = params
+  const { slug } = await params
   const items = products[slug] || []
 
   const titles = {
@@ -56,7 +52,6 @@ export default async function CollectionPage({
 
               <div className="relative w-full aspect-[3/4] overflow-hidden">
 
-                {/* IMAGE */}
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -68,7 +63,6 @@ export default async function CollectionPage({
                   "
                 />
 
-                {/* OVERLAY */}
                 <div className="
                   absolute inset-0
                   bg-gradient-to-t from-black/60 via-black/20 to-transparent
@@ -76,7 +70,6 @@ export default async function CollectionPage({
                   transition duration-500
                 " />
 
-                {/* TEXT */}
                 <div className="
                   absolute bottom-4 left-0 w-full text-center px-3
                   translate-y-4 opacity-0
@@ -98,13 +91,7 @@ export default async function CollectionPage({
                     {product.name}
                   </h3>
 
-                  <p className="
-                    text-white/80
-                    text-xs
-                    leading-snug
-                    max-w-[180px]
-                    mx-auto
-                  ">
+                  <p className="text-white/80 text-xs leading-snug max-w-[180px] mx-auto">
                     {product.description}
                   </p>
 
