@@ -56,8 +56,12 @@ const removeProduct = (i: number) => {
 const counts: Record<string, number> = {}
 selected.forEach(x => counts[x] = (counts[x] || 0) + 1)
 
-const extraTypes = Math.max(0, Object.keys(counts).length - 2)
-const totalPrice = basePrices[boxSize] + (extraTypes * 60)
+const extraCount = selected.filter(name =>
+  products.nut.some(p => p.name === name) ||
+  products.fruit.some(p => p.name === name)
+).length
+
+const totalPrice = basePrices[boxSize] + (extraCount * 15)
 
 const sendWhatsAppOrder = () => {
   if(selected.length !== boxSize){
