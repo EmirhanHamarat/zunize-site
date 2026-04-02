@@ -168,7 +168,13 @@ return(
   <div>
     <h2 className="text-xl mb-4 font-semibold">Çikolatalar</h2>
     <div className="flex gap-2 mb-4">
-      {(["artisan", "nut", "fruit"] as CollectionKey[]).map(c => (
+      {(["artisan", "nut", "fruit"] as CollectionKey[]).map(c => {
+        const labels: Record<CollectionKey, string> = {
+          artisan: "artisan",
+          nut: "kuruyemişli",
+          fruit: "meyveli"
+      }
+      return (
         <button
           key={c}
           onClick={() => setActiveCollection(c)}
