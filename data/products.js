@@ -45,6 +45,13 @@ export const products = {
     },
 
     {
+      name: "Limonlu Bitter",
+      slug: "limonlu-bitter",
+      description: "Limon kabuğu rendesi, limon püresi, tereyağı, krema, kakao kitlesi,kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
+      image: "/images/limonlu-bitter.png"
+    },
+
+    {
       name: "Portakallı",
       slug: "portakalli",
       description: "Portakal kabuğu rendesi, krema, pudra şekeri, kakao kitlesi, kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
