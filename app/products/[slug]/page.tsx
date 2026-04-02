@@ -84,16 +84,6 @@ export default async function ProductPage({ params }) {
 
             <div>
               <p className="uppercase text-xs tracking-[0.2em] mb-3 text-[#2A1A14]/60">
-                Tüketim Tarihi
-              </p>
-              <p className="text-[#2A1A14]/70 leading-relaxed">
-                Artisan koleksiyon ürünleri için önerilen tüketim süresi 7 gündür. 
-                Kuruyemiş ve meyve koleksiyonlarında bu süre 30 güne kadar uzayabilir.
-              </p>
-            </div>
-
-            <div>
-              <p className="uppercase text-xs tracking-[0.2em] mb-3 text-[#2A1A14]/60">
                 Saklama Koşulları
               </p>
               <p className="text-[#2A1A14]/70 leading-relaxed">
@@ -101,6 +91,16 @@ export default async function ProductPage({ params }) {
                 Maksimum Sıcaklık: +19°C
                 Serin ve kuru bir yerde, kokudan ve direkt ışıktan uzakta saklayın. Ürünlerimiz doğal içeriklere sahip olduğundan buzdolabında saklanması tavsiye edilir.
                 Ani sıcaklık değişimi kaynaklı çikolata yüzeyinde beyazlaşmalar olursa bu durum kakao yağının yüzeye çıkmasından kaynaklanmaktadır, korkulacak bir durum yoktur.
+              </p>
+            </div>
+
+            <div>
+              <p className="uppercase text-xs tracking-[0.2em] mb-3 text-[#2A1A14]/60">
+                Tüketim Tarihi
+              </p>
+              <p className="text-[#2A1A14]/70 leading-relaxed">
+                Artisan koleksiyon ürünleri için önerilen tüketim süresi 7 gündür. 
+                Kuruyemiş ve meyve koleksiyonlarında bu süre 30 güne kadar uzayabilir.
               </p>
             </div>
 
