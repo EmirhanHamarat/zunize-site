@@ -19,6 +19,12 @@ export default async function ProductPage({ params }) {
       break
     }
   }
+  // OFFSETS
+  const offsets: Record<string, number> = {
+    artisan: 0,
+    nut: products.artisan.length,
+    fruit: products.artisan.length + products.nut.length
+  }
 
   if (!product) {
     return (
@@ -59,7 +65,7 @@ export default async function ProductPage({ params }) {
 
           {/* NO + TITLE */}
           <p className="text-[#2A1A14]/60 tracking-[0.25em] text-sm mb-2">
-            NO.{index + 1}
+            NO.{(offsets[collection] || 0) + index + 1}
           </p>
 
           <h1 className="text-3xl md:text-4xl font-serif leading-snug mb-4">

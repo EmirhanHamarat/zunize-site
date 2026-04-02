@@ -14,6 +14,11 @@ export default async function CollectionPage({ params }: any) { // ✅ sadece bu
   }
 
   const title = titles[slug] || slug
+  const offsets: Record<string, number> = {
+    artisan: 0,
+    nut: products.artisan.length,
+    fruit: products.artisan.length + products.nut.length
+  }
 
   return (
 
@@ -79,7 +84,7 @@ export default async function CollectionPage({ params }: any) { // ✅ sadece bu
                 ">
 
                   <p className="text-white/60 text-[10px] tracking-[0.25em] mb-1">
-                    NO.{index + 1}
+                    NO.{(offsets[slug] || 0) + index + 1}
                   </p>
 
                   <h3 className="
