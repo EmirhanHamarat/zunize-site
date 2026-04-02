@@ -92,21 +92,30 @@ return(
 <section className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12">
 
   {/* KUTU */}
-  <div>
-    <div className="flex justify-between items-center mb-6">
-      <h2 className="text-xl font-semibold">Kutunuz</h2>
-      <div className="flex gap-2">
-        {([6, 8, 16, 24] as BoxSize[]).map(size => (
-          <button
-            key={size}
-            onClick={() => { setBoxSize(size); setSelected([]) }}
-            className={`px-3 py-1 text-xs border ${boxSize === size ? "bg-[#2A1A14] text-white" : "border-[#E6D5B8]"}`}
-          >
-            {size}'lı
-          </button>
-        ))}
+    <div>
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-xl font-semibold">Kutunuz</h2>
+        <div className="flex gap-2">
+          {([6, 8, 16, 24] as BoxSize[]).map(size => {
+            const lastDigit = size % 10
+
+            let suffix = "lı"
+            if ([1, 2, 5, 7, 8].includes(lastDigit)) suffix = "li"
+            else if ([3, 4].includes(lastDigit)) suffix = "lü"
+            else if (lastDigit === 9) suffix = "lu"
+
+            return (
+              <button
+                key={size}
+                onClick={() => { setBoxSize(size); setSelected([]) }}
+                className={`px-3 py-1 text-xs border ${boxSize === size ? "bg-[#2A1A14] text-white" : "border-[#E6D5B8]"}`}
+              >
+                {size}'{suffix}
+              </button>
+            )
+          })}
+        </div>
       </div>
-    </div>
 
     <div className="border p-4 bg-white shadow-sm">
       <div

@@ -17,7 +17,7 @@ export const products = {
     },
 
     {
-      name: "Monte",
+      name: "Kakao Kurabiye Parçacıklı Beyaz Çikolata",
       slug: "astroid",
       description: "Ayçiçek yağı, yumurta, şekerli vanilin, kabartma tozu, un, kakao, tam yağlı süt tozu, kakao kitlesi, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/astroid.jpg"
@@ -31,7 +31,7 @@ export const products = {
     },
 
     {
-      name: "Bonte",
+      name: "Kurabiye Dolgulu Sütlü Çikolata",
       slug: "bonte",
       description: "Tereyağı, ayçiçek yağı, yumurta, pudra şekeri, şekerli vanilin, kabartma tozu, nişasta, un, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/bonte.jpg"
@@ -137,9 +137,9 @@ export const products = {
     },
 
     {
-      name: "Kayısılı &Cevizli Bitter Çikolata",
+      name: "Kayısılı & Cevizli Bitter Çikolata",
       slug: "kayisi",
-      description: "Jumbo kuru sarı kayısı, ceviz, kakao kitlesi, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
+      description: "Jumbo kuru sarı kayısı, ceviz, kakao kitlesi, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao\u00A0yağı.",
       image: "/images/kurukayisi-bitter.jpg"
     },
 

@@ -9,7 +9,7 @@ export default function BoxCard({ collection }) {
     artisan: "/images/karamelli.jpg",
     nut: "/images/fistikli-pralin.jpg",
     fruit: "/images/kuru-portakal-bitter.jpg",
-    "build-box": "/images/antepli-pralin.jpg"
+    "build-box": "/images/kuru-cilekli-beyaz.jpg"
   }
 
   const imageSrc = imageMap[collection.slug] || "/images/placeholder.jpg"
