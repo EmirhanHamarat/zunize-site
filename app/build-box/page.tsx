@@ -124,7 +124,7 @@ return(
           ${boxSize === 6 ? "grid-cols-3" : ""}
           ${boxSize === 8 ? "grid-cols-4" : ""}
           ${boxSize === 16 ? "grid-cols-4" : ""}
-          ${boxSize === 24 ? "grid-cols-3" : ""}
+          ${boxSize === 24 ? "grid-cols-4" : ""}
         `}
       >
         {[...Array(boxSize)].map((_, i) => {
