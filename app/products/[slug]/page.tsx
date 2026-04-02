@@ -97,8 +97,10 @@ export default async function ProductPage({ params }) {
                 Saklama Koşulları
               </p>
               <p className="text-[#2A1A14]/70 leading-relaxed">
-                Serin ve kuru ortamda saklayınız. Direkt güneş ışığından uzak tutunuz. 
-                14°C - 19°C arası ideal saklama sıcaklığıdır.
+                Minimum Sıcaklık: +4°C
+                Maksimum Sıcaklık: +19°C
+                Serin ve kuru bir yerde, kokudan ve direkt ışıktan uzakta saklayın. Ürünlerimiz doğal içeriklere sahip olduğundan buzdolabında saklanması tavsiye edilir.
+                Ani sıcaklık değişimi kaynaklı çikolata yüzeyinde beyazlaşmalar olursa bu durum kakao yağının yüzeye çıkmasından kaynaklanmaktadır, korkulacak bir durum yoktur.
               </p>
             </div>
 
@@ -107,7 +109,7 @@ export default async function ProductPage({ params }) {
                 Alerjen Bilgisi
               </p>
               <p className="text-[#2A1A14]/70 leading-relaxed">
-                Süt, fındık ve fıstık içerebilir.
+                Eser miktarda soya ürünleri, süt bileşenleri, gluten, fındık, badem, yer fıstığı ve antep fıstığı içerebilir.
               </p>
             </div>
 
