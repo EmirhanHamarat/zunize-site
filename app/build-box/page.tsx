@@ -119,14 +119,13 @@ return(
 
     <div className="border p-4 bg-white shadow-sm w-full overflow-hidden">
       <div
-        className="grid gap-2 w-full"
-        style={{
-          gridTemplateColumns:
-            boxSize === 6 ? "repeat(3,1fr)"
-            : boxSize === 8 ? "repeat(4,1fr)"
-            : boxSize === 16 ? "repeat(4,1fr)"
-            : "repeat(4,1fr)"
-        }}
+        className={`
+          grid gap-2 w-full
+          ${boxSize === 6 ? "grid-cols-3" : ""}
+          ${boxSize === 8 ? "grid-cols-4" : ""}
+          ${boxSize === 16 ? "grid-cols-4" : ""}
+          ${boxSize === 24 ? "grid-cols-3" : ""}
+        `}
       >
         {[...Array(boxSize)].map((_, i) => {
           const p = selected[i]

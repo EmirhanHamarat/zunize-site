@@ -10,6 +10,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zunize.com"),
+  
+  icons: {
+    icon: "/favicon.ico",
+  },
+
   title: {
     default: "Zunize | El Yapımı Premium Çikolata",
     template: "%s | Zunize",
