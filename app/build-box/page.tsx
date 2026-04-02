@@ -89,7 +89,7 @@ Toplam: ${totalPrice} TL
 
 return(
 <main className="min-h-screen bg-[#FAFAF7] text-[#2A1A14] font-sans">
-<section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
+<section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
   {/* KUTU */}
     <div>
@@ -149,7 +149,7 @@ return(
     </div>
   </div>
 
-  <div className="space-y-12">
+  <div className="space-y-12 lg:space-y-12">
 
   {/* SEÇİMLER */}
     <div>
@@ -189,7 +189,7 @@ return(
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {products[activeCollection].map((p, i) => (
           <button
             key={i}
