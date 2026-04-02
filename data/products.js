@@ -17,7 +17,7 @@ export const products = {
     },
 
     {
-      name: "Astroid",
+      name: "Monte",
       slug: "astroid",
       description: "Ayçiçek yağı, yumurta, şekerli vanilin, kabartma tozu, un, kakao, tam yağlı süt tozu, kakao kitlesi, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/astroid.jpg"
@@ -48,7 +48,7 @@ export const products = {
       name: "Limonlu Bitter",
       slug: "limonlu-bitter",
       description: "Limon kabuğu rendesi, limon püresi, tereyağı, krema, kakao kitlesi,kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
-      image: "/images/limonlu-bitter.png"
+      image: "/images/karamelli.jpg"
     },
 
     {
