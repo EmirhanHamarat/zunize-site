@@ -149,7 +149,7 @@ return(
     </div>
   </div>
 
-  <div className="space-y-12 lg:space-y-12">
+  <div className="space-y-12 min-w-0">
 
   {/* SEÇİMLER */}
     <div>
