@@ -56,6 +56,7 @@ export default async function CollectionPage({ params }: any) { // ✅ sadece bu
                   src={product.image}
                   alt={product.name}
                   fill
+                  unoptimized
                   className="
                     object-cover
                     transition-all duration-700
