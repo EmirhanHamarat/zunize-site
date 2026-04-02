@@ -89,7 +89,7 @@ Toplam: ${totalPrice} TL
 
 return(
 <main className="min-h-screen bg-[#FAFAF7] text-[#2A1A14] font-sans">
-<section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+<section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
   {/* KUTU */}
     <div>
@@ -117,15 +117,15 @@ return(
         </div>
       </div>
 
-    <div className="border p-4 bg-white shadow-sm">
+    <div className="border p-4 bg-white shadow-sm w-full overflow-hidden">
       <div
-        className="grid gap-2"
+        className="grid gap-2 w-full"
         style={{
           gridTemplateColumns:
             boxSize === 6 ? "repeat(3,1fr)"
             : boxSize === 8 ? "repeat(4,1fr)"
             : boxSize === 16 ? "repeat(4,1fr)"
-            : "repeat(6,1fr)"
+            : "repeat(4,1fr)"
         }}
       >
         {[...Array(boxSize)].map((_, i) => {
