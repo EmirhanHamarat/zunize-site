@@ -89,7 +89,7 @@ Toplam: ${totalPrice} TL
 
 return(
 <main className="min-h-screen bg-[#FAFAF7] text-[#2A1A14] font-sans">
-<section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12">
 
   {/* KUTU */}
     <div>
@@ -149,73 +149,70 @@ return(
     </div>
   </div>
 
-  <div className="space-y-12 min-w-0">
-
   {/* SEÇİMLER */}
-    <div>
-      <h2 className="text-lg mb-4 font-semibold">Seçimleriniz</h2>
-      <div className="space-y-2 text-sm">
-        {Object.entries(counts).map(([k, v], i) => (
-          <div key={k} className="flex justify-between border-b pb-1">
-            <span>{i + 1} - {k}</span>
-            <span>{v} / {minPerType[boxSize]} min</span>
-          </div>
-        ))}
-      </div>
-      <div className="mt-6 flex justify-between text-sm font-medium">
-        <span>Toplam</span>
-        <span>{totalPrice} TL</span>
-      </div>
-      <button
-        onClick={sendWhatsAppOrder}
-        className="mt-4 w-full bg-[#2A1A14] text-white py-3 hover:opacity-90 transition"
-      >
-        Sipariş Gönder
-      </button>
-      {warning && <p className="text-red-500 text-sm mt-3">{warning}</p>}
+  <div>
+    <h2 className="text-lg mb-4 font-semibold">Seçimleriniz</h2>
+    <div className="space-y-2 text-sm">
+      {Object.entries(counts).map(([k, v], i) => (
+        <div key={k} className="flex justify-between border-b pb-1">
+          <span>{i + 1} - {k}</span>
+          <span>{v} / {minPerType[boxSize]} min</span>
+        </div>
+      ))}
     </div>
-
-    {/* ÇİKOLATALAR */}
-    <div>
-      <h2 className="text-xl mb-4 font-semibold">Çikolatalar</h2>
-      <div className="flex gap-2 mb-4">
-        {(["artisan", "nut", "fruit"] as CollectionKey[]).map(c => (
-          <button
-            key={c}
-            onClick={() => setActiveCollection(c)}
-            className={`px-3 py-1 text-xs border ${activeCollection === c ? "bg-[#2A1A14] text-white" : "border-[#E6D5B8]"}`}
-          >
-            {c === "artisan" ? "Artisan" : c === "nut" ? "Kuruyemişli" : "Meyveli"}
-          </button>
-        ))}
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        {products[activeCollection].map((p, i) => (
-          <button
-            key={i}
-            onClick={() => addProduct(p.name)}
-            className="border p-2 hover:scale-105 transition bg-white"
-          >
-            <img src={p.image} className="mb-2" />
-            <p className="text-xs">{p.name}</p>
-          </button>
-        ))}
-      </div>
+    <div className="mt-6 flex justify-between text-sm font-medium">
+      <span>Toplam</span>
+      <span>{totalPrice} TL</span>
     </div>
-
-    {/* KILAVUZ */}
-    <div>
-      <h2 className="text-xl mb-4 font-semibold">Sipariş Kılavuzu</h2>
-      <div className="text-sm space-y-4 leading-relaxed">
-        <p><b>1.</b> 6'lı, 8'li, 16'lı veya 24'lü kutu seçeneklerinden birini seçin.</p>
-        <p><b>2.</b> Bir kutuya en fazla 6 farklı çeşitte çikolata ekleyebilirsiniz. (6'lı kutuda 3 çeşit, 8'li kutuda ise 4 çeşit ile sınırlandırılmıştır.)</p>
-        <p><b>3.</b> Üretim standartlarımız gereği, seçtiğiniz her çeşitten kutunuza en az 3 adet eklemelisiniz. (6'lı ve 8'li kutularda bu sınır en az 2 adettir.)</p>
-        <p><b>4.</b> Menüdeki seçkin lezzetlerde adet başına ek fiyat uygulanabilir.</p>
-        <p><b>5.</b> Siparişinizi tamamladıktan sonra WhatsApp üzerinden bizimle iletişime geçerek siparişinizi oluşturabilirsiniz.</p>
-      </div>
-    </div>
-
+    <button
+      onClick={sendWhatsAppOrder}
+      className="mt-4 w-full bg-[#2A1A14] text-white py-3 hover:opacity-90 transition"
+    >
+      Sipariş Gönder
+    </button>
+    {warning && <p className="text-red-500 text-sm mt-3">{warning}</p>}
   </div>
+
+  {/* ÇİKOLATALAR */}
+  <div>
+    <h2 className="text-xl mb-4 font-semibold">Çikolatalar</h2>
+    <div className="flex gap-2 mb-4">
+      {(["artisan", "nut", "fruit"] as CollectionKey[]).map(c => (
+        <button
+          key={c}
+          onClick={() => setActiveCollection(c)}
+          className={`px-3 py-1 text-xs border ${activeCollection === c ? "bg-[#2A1A14] text-white" : "border-[#E6D5B8]"}`}
+        >
+          {c === "artisan" ? "Artisan" : c === "nut" ? "Kuruyemişli" : "Meyveli"}
+        </button>
+      ))}
+    </div>
+    <div className="grid grid-cols-3 gap-4">
+      {products[activeCollection].map((p, i) => (
+        <button
+          key={i}
+          onClick={() => addProduct(p.name)}
+          className="border p-2 hover:scale-105 transition bg-white"
+        >
+          <img src={p.image} className="mb-2" />
+          <p className="text-xs">{p.name}</p>
+        </button>
+      ))}
+    </div>
+  </div>
+
+  {/* KILAVUZ */}
+  <div>
+    <h2 className="text-xl mb-4 font-semibold">Sipariş Kılavuzu</h2>
+    <div className="text-sm space-y-4 leading-relaxed">
+      <p><b>1.</b> 6'lı, 8'li, 16'lı veya 24'lü kutu seçeneklerinden birini seçin.</p>
+      <p><b>2.</b> Bir kutuya en fazla 6 farklı çeşitte çikolata ekleyebilirsiniz. (6'lı kutuda 3 çeşit, 8'li kutuda ise 4 çeşit ile sınırlandırılmıştır.)</p>
+      <p><b>3.</b> Üretim standartlarımız gereği, seçtiğiniz her çeşitten kutunuza en az 3 adet eklemelisiniz. (6'lı ve 8'li kutularda bu sınır en az 2 adettir.)</p>
+      <p><b>4.</b> Menüdeki seçkin lezzetlerde adet başına ek fiyat uygulanabilir.</p>
+      <p><b>5.</b> Siparişinizi tamamladıktan sonra WhatsApp üzerinden bizimle iletişime geçerek siparişinizi oluşturabilirsiniz.</p>
+    </div>
+  </div>
+
 </section>
 </main>
 )
