@@ -174,7 +174,7 @@ return(
           onClick={() => setActiveCollection(c)}
           className={`px-3 py-1 text-xs border ${activeCollection === c ? "bg-[#2A1A14] text-white" : "border-[#E6D5B8]"}`}
         >
-          {c === "artisan" ? "artisan" : c === "nut" ? "kuruyemişli" : "meyveli"}
+          {c === "artisan" ? "Artisan" : c === "nut" ? "Kuruyemişli" : "Meyveli"}
         </button>
       ))}
     </div>
