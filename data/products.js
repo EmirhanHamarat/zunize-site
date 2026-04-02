@@ -3,14 +3,14 @@ export const products = {
   artisan: [
 
     {
-      name: "Antep Kelebek Pralin",
+      name: "Antep Fıstığı Dolgulu Beyaz Çikolata",
       slug: "antep-kelebek-pralin",
       description: "Doğal antep fıstığı tozu, antep fıstığı parçacıkları, krema, bal, şeker hamuru (süsleme), tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/antepli-kelebek-beyaz-cikolata.jpg"
     },
 
     {
-      name: "Hindistan Cevizli",
+      name: "Hindistan Cevizi Dolgulu Sütlü Çikolata",
       slug: "hindistan-cevizli",
       description: "Hindistan cevizi rendesi, krema, tam yağlı süt tozu, kakao kitlesi, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/hindistan-cevizli-sutlu.jpg"
@@ -24,7 +24,7 @@ export const products = {
     },
 
     {
-      name: "Karamelli",
+      name: "Karamel Dolgulu Sütlü Çikolata",
       slug: "karamelli",
       description: "Şeker, krema, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), kakao yağı.",
       image: "/images/karamelli.jpg"
@@ -38,21 +38,21 @@ export const products = {
     },
 
     {
-      name: "Acı Karamel",
+      name: "Karamel Dolgulu & Fındıklı Bitter Çikolata",
       slug: "aci-karamel",
       description: "Fındık, krema, kakao kitlesi, kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/aci-karamel.jpg"
     },
 
     {
-      name: "Limonlu Bitter",
+      name: "Limon Dolgulu Bitter Çikolata",
       slug: "limonlu-bitter",
       description: "Limon kabuğu rendesi, limon püresi, tereyağı, krema, kakao kitlesi,kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
-      image: "/images/karamelli.jpg"
+      image: "/images/limonlu-bitter.jpg"
     },
 
     {
-      name: "Portakallı",
+      name: "Portakal Dolgulu Bitter Çikolata",
       slug: "portakalli",
       description: "Portakal kabuğu rendesi, krema, pudra şekeri, kakao kitlesi, kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/portakalli.jpg"
@@ -63,14 +63,14 @@ export const products = {
   nut: [
 
     {
-      name: "Antepli Pralin",
+      name: "Antep Fıstıklı Pralin",
       slug: "antepli-pralin",
       description: "Doğal antep fıstığı, kakao kitlesi, kakao tozu, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/antepli-pralin.jpg"
     },
 
     {
-      name: "Bademli Pralin",
+      name: "Badem Parçacıklı Çikolata",
       slug: "bademli-pralin",
       description: "Badem parçaları, kakao kitlesi, kakao tozu, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/bademli-pralin.jpg"
@@ -102,42 +102,49 @@ export const products = {
   fruit: [
 
     {
-      name: "Kuru Çilek",
+      name: "Çilek & Beyaz Çikolata",
       slug: "kuru-cilek",
       description: "Kurutulmuş çilek parçaları, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/kuru-cilekli-beyaz.jpg"
     },
 
     {
-      name: "Elma Kurusu",
+      name: "Elma & Tarçın Dolgulu Sütlü Çikolata",
       slug: "elma-kurusu",
       description: "Kurutulmuş elma parçaları, tarçın, şeker hamuru (süsleme), tam yağlı süt tozu, kakao kitlesi, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/elma-kurusu-sutlu.jpg"
     },
 
     {
-      name: "Medine Hurmalı",
+      name: "Elma & Tarçınlı Sütlü Çikolata",
+      slug: "elma-kurusu-tarcin",
+      description: "Kurutulmuş elma parçaları, tarçın, kakao kitlesi, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
+      image: "/images/elma-kurusu-tarcin-sutlu.jpg"
+    },
+
+    {
+      name: "Hurmalı & Fıstık Kremalı Dolgulu Bitter Çikolata",
       slug: "medine-hurmali",
       description: "Medine hurması, fıstık, kakao kitlesi, kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/medine-hurmali-fistikli-bitter.jpg"
     },
 
     {
-      name: "İncir Kurusu",
+      name: "İncir & Fındıklı Bitter Çikolata",
       slug: "incir-kurusu",
       description: "Kurutulmuş incir, fındık, kakao kitlesi, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/incir-kurusu-bitter.jpg"
     },
 
     {
-      name: "Kayısı",
+      name: "Kayısılı &Cevizli Bitter Çikolata",
       slug: "kayisi",
       description: "Jumbo kuru sarı kayısı, ceviz, kakao kitlesi, tam yağlı süt tozu, yağsız süt tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/kurukayisi-bitter.jpg"
     },
 
     {
-      name: "Portakal",
+      name: "Portakallı Bitter Çikolata",
       slug: "kuru-portakal",
       description: "Kurutulmuş portakal, kakao kitlesi, kakao tozu, emülgatör (ayçiçek lesitini), şeker, kakao yağı.",
       image: "/images/kuru-portakal-bitter.jpg"
