@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   },
 
   title: {
-    default: "Zunize | El Yapımı Premium Çikolata",
+    default: "Zunize | El Yapımı Seçkin Çikolata",
     template: "%s | Zunize",
   },
   description:
-    "Zunize, özenle hazırlanmış el yapımı premium çikolata koleksiyonları sunar. Artisan, kuruyemiş ve meyve koleksiyonlarını keşfedin.",
+    "Zunize, özenle hazırlanmış el yapımı seçkin çikolata koleksiyonları sunar. Artisan, kuruyemiş ve meyve koleksiyonlarını keşfedin.",
   keywords: [
     "zunize",
     "el yapımı çikolata",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "butik çikolata",
   ],
   openGraph: {
-    title: "Zunize | El Yapımı Premium Çikolata",
+    title: "Zunize | El Yapımı Seçkin Çikolata",
     description: "Zunize çikolata koleksiyonlarını keşfedin.",
     url: "https://zunize.com",
     siteName: "Zunize",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zunize | El Yapımı Premium Çikolata",
+    title: "Zunize | El Yapımı Seçkin Çikolata",
     description: "Zunize çikolata koleksiyonlarını keşfedin.",
     images: ["/images/zunize-logo.png"],
   },
